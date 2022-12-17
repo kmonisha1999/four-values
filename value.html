@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4values</title>
+</head>
+<body>
+<script>
+
+     let a=prompt("enter A");
+    let b=prompt("enter B");
+    let c=prompt("enter C");
+    let d=prompt("enter D");
+	
+    if((a>b)&&(a>c)&&(a>d)){
+	    if((b>c)&&(b>d)){
+		    if (c>d){
+			    console.log(d,c,b,a)
+			}
+			else{
+			    console.log(c,d,b,a)
+			}	
+		}
+        else{
+            if((c>d)&&(c>b)){
+			    if(b>d){
+				    console.log(d,b,c,a)
+				}
+			}
+			else{
+			    console.log(a,b,d,c)
+			}
+        }		
+	}
+    else if((b>a)&&(b>c)&&(b>d)){
+	    if((a>c)&&(a>d)){
+			if(c>d){
+				console.log(d,c,a,b)
+			}
+			else{
+				console.log(c,d,a,b)
+			}
+				
+	    }
+		else{
+		    if((c>a)&&(c>d)){
+			    if(a>d){
+				    console.log(d,a,c,b)
+				}
+			    else{
+				    console.log(a,d,c,b)
+				}
+			}
+		}
+	
+	}
+	else if((c>a)&&(c>b)&&(c>d)){
+	    if((a>b)&&(a>d)){
+		    if(b>d){
+		    console.log(d,b,c,a)
+			}
+			else{
+			    console.log(b,d,a,c)
+			}
+		}
+		else((b>a)&&(b>d))
+		{
+			if(a>d){
+				console.log(d,a,b,c)
+			}
+			else{
+				console.log(a,d,b,a)
+			}
+		
+	}
+	}
+	else if((d>a)&&(d>b)&&(d>c)){
+	    if((a>b)&&(a>c)){
+		    if(c>b){
+			    console.log(b,c,a,d)
+			}
+			else{
+			    console.log(c,b,a,d)
+			}
+		
+		
+		}
+		else((b>c)&&(b>a))
+		{
+			if(a>c){
+				console.log(c,a,b,d)
+			}
+			else{
+					console.log(a,b,c,d)
+				}
+	}
+	
+	}
+
+</script>
+</body>
+</html>
